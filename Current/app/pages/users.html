@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta charset="utf-8">  	
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>	
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+ 	<link rel="stylesheet" type="text/css" href="../css/main.css" />	
+  	<script src="../scripts/gui.js"></script>
+  	<script src="../scripts/load_user_list.js"></script>
+
+  	
+    <title>Syllatrack</title>
+  </head>
+  <body>
+    <div class="container">
+    	<div class="jumbotron" id="welcome_banner">
+	    	<span align="center">
+	    		<h1>Welcome!</h1>
+	    		<h4>Please select a user.</h4>  		
+	    	</span>	
+    	</div>	
+    </div>
+	<div class="container">
+		<table class="table table-hover white">
+		    <thead>
+		      <tr>
+		        <th>Name:<span style="float:right" width="100%"><a href="./index.html">Back to Home</a></span></th>
+		      </tr>
+		    </thead>
+		    <tbody id="user_list" align="center">
+		    </tbody>
+		</table>
+	</div>    
+  </body>
+</html>

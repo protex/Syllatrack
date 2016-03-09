@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta charset="utf-8">  	
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>	
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  	<script src="../scripts/gui.js"></script>
+  	<script src="../scripts/getSyllabiList.js"></script>
+	<script src="../scripts/login.js"></script>
+	<script src="../scripts/request.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/main.css" />
+
+    <title>Syllatrack - Login</title>
+  </head>
+  <body>
+  	<div class="container" id="header">
+  		<div id="welcome_banner" class="jumbotron">
+  			<h2>Welcome to Syllatrack!</h2>
+  			<h5>Please log in with your <a href="http://families.motherofdivinegrace.org" target="_blank">Families Website</a> credentials.</h5>
+  		</div>
+  	</div>
+    <div class="container">
+    	<div class="row center-y">
+    		<div class="col-lg-4">&nbsp;</div>
+    		<div class="col-lg-4">
+    			<div id="login_fail" class="alert alert-warning hidden">Incorrect username or password, please try again.</div>
+    			<div id="not_new_user" class="aler alert-danger hidden">This user has already been logged in, please go back to the Select User page.</div>
+    			<div id="old_user_update" class="aler alert-success hidden">The E-mail for this user has been updated!</div>
+				<div id="login_form" class="well well-lg" height="100%">
+					<label for="usr">Email:</label>
+					<input type="text" class="form-control" id="email">
+					<label for="usr">Password:</label>
+					<input type="password" class="form-control" id="psswrd">
+					<button type="button" id="login_button" class="btn btn-large btn-danger" onclick="request()">Login</button>			
+				</div>
+			</div>
+			<div class="col-lg-4">&nbsp;</div>
+		</div>
+    </div>
+  </body>
+</html>

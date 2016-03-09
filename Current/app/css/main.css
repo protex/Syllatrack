@@ -1,0 +1,39 @@
+body {
+	background-color: #C6B797;
+	min-height: 100%;
+	margin: 0;
+}
+
+.center-y{
+	vertical-align: middle;
+}
+
+html {
+	min-height: 100%;
+}
+
+#login_button {
+	margin-top: 10px;
+}
+
+#welcome_banner {
+	margin-top: -20px;
+}
+
+#access {
+	margin-top: 10px;
+}
+
+.white {
+	background-color: white;
+}
+
+#user_list {
+	cursor: pointer;
+}
+
+#user_list tr td a {
+    display:block;
+    height:100%;
+    width:100%;
+}
